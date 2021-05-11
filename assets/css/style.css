@@ -47,7 +47,7 @@ body {
   }
   
   .operators div:hover {
-    background-color: #ddd;
+    background-color: green;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
     border-color: #aaa;
@@ -63,7 +63,7 @@ body {
   
   .numbers div {
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(226, 22, 22);
     border-radius: 1px;
     width: 80px;
     text-align: center;
@@ -87,7 +87,7 @@ body {
   
   div.equal {
     display: inline-block;
-    border: 1px solid #3079ED;
+    border: 1px solid #13af0d;
     border-radius: 1px;
     width: 17%;
     text-align: center;
@@ -96,7 +96,7 @@ body {
     vertical-align: top;
     cursor: pointer;
     color: #FFF;
-    background-color: #4d90fe;
+    background-color: #3eb60e;
     transition: all .2s ease-in-out;
   }
   
