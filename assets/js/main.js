@@ -1,14 +1,14 @@
 "use strict";
 
-let input = document.getElementById('input'), 
+let input = document.getElementById('input'),
   number = document.querySelectorAll('.numbers div'),
-  operator = document.querySelectorAll('.operators div'), 
-  result = document.getElementById('result'), 
-  clear = document.getElementById('clear'), 
-  resultDisplayed = false; 
+  operator = document.querySelectorAll('.operators div'),
+  result = document.getElementById('result'),
+  clear = document.getElementById('clear'),
+  resultDisplayed = false;
 
-for (lat i = 0; i < number.length; i++) {
-  number[i].addEventListener("click", function(e) {
+for (let i = 0; i < number.length; i++) {
+  number[i].addEventListener("click", function (e) {
 
     let currentString = input.innerHTML;
     let lastChar = currentString[currentString.length - 1];
@@ -30,7 +30,7 @@ for (lat i = 0; i < number.length; i++) {
 }
 
 for (let i = 0; i < operator.length; i++) {
-  operator[i].addEventListener("click", function(e) {
+  operator[i].addEventListener("click", function (e) {
 
     let currentString = input.innerHTML;
     let lastChar = currentString[currentString.length - 1];
@@ -50,7 +50,7 @@ for (let i = 0; i < operator.length; i++) {
 }
 
 
-result.addEventListener("click", function() {
+result.addEventListener("click", function () {
 
   let inputString = input.innerHTML;
 
@@ -63,7 +63,7 @@ result.addEventListener("click", function() {
   console.log(numbers);
   console.log("----------------------------");
 
-  
+
   let divide = operators.indexOf("÷");
   while (divide != -1) {
     numbers.splice(divide, 2, numbers[divide] / numbers[divide + 1]);
@@ -93,12 +93,12 @@ result.addEventListener("click", function() {
     add = operators.indexOf("+");
   }
 
-  input.innerHTML = numbers[0]; 
+  input.innerHTML = numbers[0];
 
-  resultDisplayed = true; 
+  resultDisplayed = true;
 });
 
 
-clear.addEventListener("click", function() {
+clear.addEventListener("click", function () {
   input.innerHTML = "";
 })
